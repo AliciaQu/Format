@@ -6,5 +6,11 @@
 /* --- Foundation --- */
 @import "./src/css/foundation/common.css";
 
+/* --- Components --- */
+@import "./src/css/components/button.css";
+@import "./src/css/components/search.css";
+@import "./src/css/components/profile.css";
+
 /* --- Frames --- */
 @import "./src/css/frames/nav/nav.css";
+
