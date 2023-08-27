@@ -35,5 +35,5 @@
     margin-top: 1rem;
     width: 100%;
     text-align: center;
-    padding: var(--left-profile-padding), 0
+    padding: var(--left-profile-padding);
 }
