@@ -4,6 +4,13 @@ import axios from "axios";
 //file import
 import { getPath } from "./utiles";
 
+async function getProfile() {
+  const path = getPath("profile");
+  const response = await getInfo(path);
+  console.log(response);
+  return response.data;
+}
+
 async function getHighline() {
     const path = getPath("highline");
     const response = await getInfo(path);
@@ -21,3 +28,4 @@ async function getInfo(path) {
 
 
   export const highline = await getHighline();
+  export const profile = await getProfile();
