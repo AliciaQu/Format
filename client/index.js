@@ -10,7 +10,10 @@ import {
   middle_highline_description_img,
   middle_highline_description_p,
   create_news,
-  create_picture_structure
+  create_picture_structure,
+  create_profile_structure,
+  create_control_structure,
+  create_comment_structure
 } from "@/js/common.js";
 
 //main left
@@ -49,4 +52,7 @@ cards.forEach((element) => {
  const doms = create_news();
  cardsDom.appendChild(doms.info)
  create_picture_structure(doms.info_picture, element.picture)
+ create_profile_structure(doms.info_profile, element.profile)
+ create_control_structure(doms.info_control, element.control);
+ create_comment_structure(doms.info_comment, element.comment);
 })
